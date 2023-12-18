@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+
+.detail-section1,
+.detail-section3,
+.detail-section4 {
+  padding-bottom: 4vh;
+  border-bottom: solid 1px black;
+}
+/* IMAGE BOX */
+.smallimagebox {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.smallimagebox::-webkit-scrollbar {
+  display: none;
+}
+.smallimagebox img {
+  border-radius: 10px;
+  filter: brightness(0.7);
+}
+.smallimagebox .img-active {
+  filter: brightness(1);
+  border: solid 2pt #fbc968;
+}
+.bigimagebox img {
+  border-radius: 20px;
+}
+
+/* PRODUCT INFO */
+.productinfo a,
+.productname-mobi a {
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.5s;
+}
+.productinfo {
+  overflow-y: scroll;
+}
+.productinfo b {
+  font-size: 1.1rem;
+  font-family: semiboldfont;
+}
+.productbox-review {
+  font-size: 16px;
+}
+/* CHOOSE COLOR */
+.choosecolor ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.colorbox {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: solid 1px black;
+  margin-right: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.colorbox-active {
+  border: solid 2pt #fbc968;
+  transform: scale(1.2);
+}
+
+/* SELECT QUANTITY */
+.selectquantity h5 {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+/* CHOOSE WARRANTY */
+.warrantybtn {
+  width: 100%;
+  outline: none;
+  border: solid 1pt black;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.wrt-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* BUY BUTTON */
+.buyproduct {
+  display: flex;
+  justify-content: space-between;
+}
+.buyproduct h3 {
+  margin: 0;
+}
+.buybtn,
+.likebtn {
+  outline: none;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+.buybtn {
+  width: 100%;
+  background-color: #fbc968;
+  float: left;
+  border: solid 1pt #fbc968;
+}
+.likebtn {
+  margin-left: 10px;
+  background-color: black;
+  border: solid 1pt black;
+  color: #fbc968;
+}
+
+/* PRODUCT DIMENSION */
+.productdimension {
+  border: solid 1pt black;
+  border-radius: 20px;
+}
+.dimensionbox {
+  text-align: center;
+  padding: 20px;
+}
+.dimensionbox ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box,
+.box-active {
+  width: 50px;
+  height: 15px;
+  border: solid 1px #000000;
+}
+.box-active {
+  border: solid 1px #fbc968;
+  background-color: #fbc968;
+}
+
+/* AT HOME WITH MADERA */
+.detail-section3 img {
+  border-radius: 20px;
+  margin-bottom: 3vh;
+}
+
+/* CUSTOMER REVIEW */
+.rating-sort select {
+  background-color: white;
+  outline: none;
+  border: solid 1pt black;
+  border-radius: 30px;
+  padding-left: 15px;
+  font-size: 14px;
+  width: 150px;
+}
+.custom-select:focus {
+  box-shadow: none;
+  border: solid 1pt black;
+}
+.review-content img {
+  border-radius: 10px;
+  width: 30%;
+}
+
+/* RESPONSIVE CSS ----------------------------------------------- */
+
+/* XL - 1440 -----------------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .productname-mobi {
+    display: none;
+  }
+  .smallimagebox {
+    overflow-y: scroll;
+    height: 540px;
+    padding-right: 0;
+  }
+  .productinfo {
+    height: 540px;
+  }
+  .smallimagebox img {
+    margin-bottom: 1vh;
+  }
+  .buybtn:hover,
+  .likebtn:hover {
+    transition: all ease 0.5s;
+    background-color: white;
+    border: solid 1pt black;
+    color: black;
+  }
+  .productinfo a:hover {
+    text-decoration: underline;
+    color: #fbc968;
+    transition: all ease 0.5s;
+  }
+  .dimensionbox-1,
+  .dimensionbox-2 {
+    border-bottom: solid 1pt black;
+  }
+  .dimensionbox-1,
+  .dimensionbox-3 {
+    border-right: solid 1pt black;
+  }
+}
+
+/* LG - 1024 -----------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .productname-mobi {
+    display: none;
+  }
+  .smallimagebox {
+    overflow-y: scroll;
+    height: 450px;
+    padding-right: 0;
+  }
+  .productinfo {
+    height: 450px;
+  }
+  .smallimagebox img {
+    margin-bottom: 1vh;
+  }
+  .buybtn:hover,
+  .likebtn:hover {
+    transition: all ease 0.5s;
+    background-color: white;
+    border: solid 1pt black;
+    color: black;
+  }
+  .productinfo a:hover {
+    text-decoration: underline;
+    color: #fbc968;
+    transition: all ease 0.5s;
+  }
+  .dimensionbox-1,
+  .dimensionbox-2 {
+    border-bottom: solid 1pt black;
+  }
+  .dimensionbox-1,
+  .dimensionbox-3 {
+    border-right: solid 1pt black;
+  }
+}
+
+/* MD - 768 -----------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .productname-desktop {
+    display: none;
+  }
+  .smallimagebox {
+    overflow-y: scroll;
+    height: 570px;
+    padding-right: 0;
+  }
+  .smallimagebox img {
+    margin-bottom: 1vh;
+  }
+  .bigimagebox img {
+    margin-bottom: 2vh;
+  }
+  .dimensionbox-1,
+  .dimensionbox-2,
+  .dimensionbox-3 {
+    border-bottom: solid 1pt black;
+  }
+  .box,
+  .box-active {
+    width: 60px;
+  }
+}
+
+/* SM - 576 -----------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .productname-desktop {
+    display: none;
+  }
+  .detail-section1 {
+    margin-top: 4vh;
+  }
+  .smallimagebox {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .smallimagebox {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+  }
+  .smallimagebox::-webkit-scrollbar {
+    display: auto;
+  }
+  .smallimagebox img {
+    display: inline-block;
+    width: 25%;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+  }
+  .bigimagebox img {
+    margin-bottom: 2vh;
+  }
+  .dimensionbox-1,
+  .dimensionbox-2,
+  .dimensionbox-3 {
+    border-bottom: solid 1pt black;
+  }
+}
+
+/* XS - 420 -----------------------------------------------------*/
+
+@media (max-width: 575px) {
+  .productname-desktop {
+    display: none;
+  }
+  .detail-section1 {
+    margin-top: 4vh;
+  }
+  .smallimagebox {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .smallimagebox {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+  }
+  .smallimagebox::-webkit-scrollbar {
+    display: auto;
+  }
+  .smallimagebox img {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+  }
+  .bigimagebox img {
+    margin-bottom: 2vh;
+  }
+  .dimensionbox-1,
+  .dimensionbox-2,
+  .dimensionbox-3 {
+    border-bottom: solid 1pt black;
+  }
+  .box,
+  .box-active {
+    width: 35px;
+  }
+}

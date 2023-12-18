@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Madera Detail Page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/detail.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/css/all.min.css" />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- JavaScript viet vao file nay -->
+    <script src="js/script.js"></script>
+
+    <!-- KHONG VIET JAVA O FILE HTML -->
+  </head>
+  <body>
+    <div class="container-fluid" id="blackscreen"></div>
+    <div class="container-fluid" id="blackscreen2"></div>
+    <div class="container-fluid" id="blackscreen3"></div>
+
+    <!-- MODAL SIGN IN -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sign in to your account</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="row">
+                <div class="col-10 offset-1">
+                  <div class="modalicons"><i class="fa-solid fa-user"></i></div>
+                  <input type="text" name="user" value="" id="userid" placeholder="Username" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10 offset-1">
+                  <div class="modalicons"><i class="fa-solid fa-lock"></i></div>
+                  <input type="password" name="pass" value="" id="passid" placeholder="Password" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-1" id="rememberme">
+                  <label class="customcheckbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <span class="checkbox-label">Remember Me</span>
+                  </label>
+                </div>
+                <div class="col-5" id="forgotpassword">
+                  <a href=""><p>Forgot password?</p></a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="signinmodalbtn">Sign In</button>
+            <button type="button" class="cancelmodalbtn" data-dismiss="modal">Cancel</button>
+            <div class="row" style="margin-top: 20px; margin-bottom: 0">
+              <p>Don't have an account? <a href="">Click here to register</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CART-->
+    <div
+      class="modal fade"
+      id="cart-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">View Cart</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+          </div>
+          <div class="modal-body">
+            <div class="row mb-3 align-items-center cart-modal">
+              <div class="col-2">
+                <img src="images/Home/product/armchair1.png" alt="" class="img-thumbnail" />
+              </div>
+              <div class="col-4 p-0">
+                <h6>POANG CHAIR</h6>
+              </div>
+              <div class="col-6">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-5 p-0">
+                    <select name="color" id="" class="custom-select">
+                      <option value="">Grey</option>
+                      <option value="">White</option>
+                      <option value="">Black</option>
+                    </select>
+                  </div>
+                  <div class="col-5">
+                    <select name="quantity" id="" class="custom-select">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center cart-modal">
+              <div class="col-2">
+                <img src="images/Home/product/armchair3.png" alt="" class="img-thumbnail" />
+              </div>
+              <div class="col-4 p-0">
+                <h6>COLETTE</h6>
+              </div>
+              <div class="col-6">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-5 p-0">
+                    <select name="color" id="" class="custom-select">
+                      <option value="">Grey</option>
+                      <option value="">White</option>
+                      <option value="">Black</option>
+                    </select>
+                  </div>
+                  <div class="col-5">
+                    <select name="quantity" id="" class="custom-select">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p id="empty-cart-text" style="display: none; text-align: center; font-family: italicfont">
+              There is no items in the cart
+            </p>
+          </div>
+          <div class="modal-footer pb-4">
+            <button type="button" class="cancelmodalbtn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="checkoutmodalbtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container-fluid" id="bgheader">
+      <div class="container">
+        <div class="row">
+          <!--				MOBILE ICONS-->
+          <div class="col-md-3 col-sm-3 col-3 d-lg-none" id="mobileicons">
+            <ul>
+              <li>
+                <a id="triggermobilenavi"><i class="fa-solid fa-bars"></i></a>
+              </li>
+              <li>
+                <a id="triggermobilesearch"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--				LOGO-->
+          <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-6" id="logoheader">
+            <a href="index.html"><img src="Images/Logo/Logo doc.png" /></a>
+          </div>
+          <!--	  			Navi desktop-->
+          <div class="col-xl-8 col-lg-8 d-none d-lg-block" id="navi">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li>
+                <a href="product.html" id="trigger-bgdropdownmenu"
+                  >PRODUCTS <i class="fa-solid fa-chevron-down" id="icon-trigger-bgdropdownmenu"></i
+                ></a>
+              </li>
+              <li><a href="collection.html">COLLECTIONS</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="faqs.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <!--	  			Search-->
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block" id="search">
+            <form>
+              <input type="text" placeholder="Search..." id="searchfill" />
+              <button id="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <!--				ICONS-->
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-3 col-3 icons">
+            <ul>
+              <li>
+                <a data-toggle="modal" data-target="#cart-modal"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li>
+                <a data-toggle="modal" data-target="#exampleModalCenter"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--	  MOBILE NAVI-->
+    <div class="container-fluid" id="bgmobilenavi">
+      <div class="row">
+        <div class="col-12" id="mobilenavi">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <div class="container mobile-dropdown-btn">
+                <a href="product.html">PRODUCTS</a>
+                <button class="trigger-mobile-dropdown-lv1">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </li>
+            <div class="mobile-dropdown-container">
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-couch"></i>Living Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Sofa</a>
+                  <a href="product.html">Table</a>
+                  <a href="product2.html">Cabinet</a>
+                  <a href="product.html">Lighting</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-bed-front"></i>Bedroom</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Bed</a>
+                  <a href="product.html">Wardrobe</a>
+                  <a href="product.html">Mattress</a>
+                  <a href="product.html">Bedside</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-fork-knife"></i>Dining Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Dining Table</a>
+                  <a href="product.html">Dining Chair</a>
+                  <a href="product.html">Dining Set</a>
+                  <a href="product.html">Kitchen Cabinet</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-books"></i>Work Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Desk</a>
+                  <a href="product.html">Office Chair</a>
+                  <a href="product.html">Bookshelves</a>
+                  <a href="product.html">Storage</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-trees"></i>Outdoor</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Garden Table</a>
+                  <a href="product.html">Garden Chair</a>
+                  <a href="product.html">Canopies</a>
+                  <a href="product.html">Barbeques</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-lights-holiday"></i>Decoration</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2" style="border-bottom: none">
+                  <a href="product.html">Print Art</a>
+                  <a href="product.html">Rugs</a>
+                  <a href="product.html">Curtain</a>
+                  <a href="product.html">Decor Objects</a>
+                </div>
+              </div>
+            </div>
+            <li><a href="collection.html">COLLECTIONS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="faqs.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE SEARCH -->
+    <div class="container-fluid d-lg-none" id="bgmobilesearch">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-12" id="mobilesearch">
+            <form>
+              <input type="text" placeholder="Search..." id="mobilesearchfill" />
+              <button id="mobilesearchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT MENU -->
+    <div class="container" id="bgdropdownmenu">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 d-none d-lg-block">
+          <ul class="productmenu">
+            <li class="menuproductbutton" data-dropdown="1">
+              <a href="product.html" class="dropdownbutton" data-dropdown="1">
+                <img src="Images/flaticon/couch.png" />
+                <ul>
+                  <li><h6>Living Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="2">
+              <a href="product.html" class="dropdownbutton" data-dropdown="2">
+                <img src="Images/flaticon/bed.png" />
+                <ul>
+                  <li><h6>Bedroom</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="3">
+              <a href="product.html" class="dropdownbutton" data-dropdown="3">
+                <img src="Images/flaticon/dinner-table.png" />
+                <ul>
+                  <li><h6>Dining Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="4">
+              <a href="product.html" class="dropdownbutton" data-dropdown="4">
+                <img src="Images/flaticon/work-table.png" />
+                <ul>
+                  <li><h6>Work Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="5">
+              <a href="product.html" class="dropdownbutton" data-dropdown="5">
+                <img src="Images/flaticon/outdoor.png" />
+                <ul>
+                  <li><h6>Outdoor</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="6">
+              <a href="product.html" class="dropdownbutton" data-dropdown="6">
+                <img src="Images/flaticon/decoration.png" />
+                <ul>
+                  <li><h6>Decoration</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- DROPDOWN MENU -->
+      <div class="row">
+        <div class="container productmenudropdown">
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="1">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Sofa')" data-dropdown="1">Sofa</button></a
+                >
+                <a href="product.html"><button class="tablinks" onmouseover="openTab(event, 'Table')">Table</button></a>
+                <a href="product2.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Cabinet')">Cabinet</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Lighting')">Lighting</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="Sofa" class="tabcontent righttab" data-dropdown="1">
+                  <h3>Sofa</h3>
+                  <p>Cozy and stylish seating options</p>
+                  <img src="images/sofa.png" class="img-fluid" />
+                </div>
+                <div id="Table" class="tabcontent righttab">
+                  <h3>Table</h3>
+                  <p>Functional and decorative centerpieces</p>
+                  <img src="images/table.png" class="img-fluid" />
+                </div>
+                <div id="Cabinet" class="tabcontent righttab">
+                  <h3>Cabinet</h3>
+                  <p>Storage solutions with a modern twist</p>
+                  <img src="images/cabinet.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Lighting" class="tabcontent righttab">
+                  <h3>Lighting</h3>
+                  <p>Ambiance-enhancing fixtures for any space</p>
+                  <img src="images/lighting.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="2">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Bed')" data-dropdown="2">Bed</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Wardrobe')">Wardrobe</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Mattress')">Mattress</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Bedside')">Bedside</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="Bed" class="tabcontent righttab" data-dropdown="2">
+                  <h3>Bed</h3>
+                  <p>Sturdy and stylish designs</p>
+                  <img src="images/bed.png" class="img-fluid" />
+                </div>
+                <div id="Wardrobe" class="tabcontent righttab">
+                  <h3>Wardrobe</h3>
+                  <p>Spacious storage solutions for clothes</p>
+                  <img src="images/wardrobe.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Mattress" class="tabcontent righttab">
+                  <h3>Mattress</h3>
+                  <p>Luxurious comfort for a dreamy slumber</p>
+                  <img src="images/mattress.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Bedside" class="tabcontent righttab">
+                  <h3>Bedside</h3>
+                  <p>Convenient bedside storage for essentials</p>
+                  <img src="images/bedside.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="3">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-table')" data-dropdown="3">
+                    Dining Table
+                  </button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-chair')">Dining Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-set')">Dining Set</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'kitchen-cabinet')">Kitchen Cabinet</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="dining-table" class="tabcontent righttab" data-dropdown="3">
+                  <h3>Dining Table</h3>
+                  <p>Gather around a beautiful table</p>
+                  <img src="images/diningtable.png" class="img-fluid" />
+                </div>
+                <div id="dining-chair" class="tabcontent righttab">
+                  <h3>Dining Chair</h3>
+                  <p>Sit in style and comfort</p>
+                  <img src="images/diningchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="dining-set" class="tabcontent righttab">
+                  <h3>Dining Set</h3>
+                  <p>Complete your dining room with ease</p>
+                  <img src="images/diningset.png" alt="" class="img-fluid" />
+                </div>
+                <div id="kitchen-cabinet" class="tabcontent righttab">
+                  <h3>Kitchen Cabinet</h3>
+                  <p>Organize and beautify your kitchen space</p>
+                  <img src="images/kitchencabinet.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="4">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="desk" class="tabcontent lefttab" data-dropdown="4">
+                  <h3>Desk</h3>
+                  <p>For a productive workspace</p>
+                  <img src="images/workdesk.png" class="img-fluid" />
+                </div>
+                <div id="office-chair" class="tabcontent lefttab">
+                  <h3>Office Chair</h3>
+                  <p>Comfortable and stylish seating</p>
+                  <img src="images/workchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="book-shelves" class="tabcontent lefttab">
+                  <h3>Book Shelves</h3>
+                  <p>Organize your workspace</p>
+                  <img src="images/bookshelves.png" alt="" class="img-fluid" />
+                </div>
+                <div id="storage" class="tabcontent lefttab">
+                  <h3>Storage</h3>
+                  <p>Keep your important documents safe</p>
+                  <img src="images/workstorage.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'desk')" data-dropdown="4">Desk</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'office-chair')">Office Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'book-shelves')">Book Shelves</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'storage')">Storage</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="5">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="garden-table" class="tabcontent lefttab" data-dropdown="5">
+                  <h3>Garden Table</h3>
+                  <p>Dine with our stylish garden tables.</p>
+                  <img src="images/gardentable.png" class="img-fluid" />
+                </div>
+                <div id="garden-chair" class="tabcontent lefttab">
+                  <h3>Garden Chair</h3>
+                  <p>Relax and unwind</p>
+                  <img src="images/gardenchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="canopies" class="tabcontent lefttab">
+                  <h3>Canopies</h3>
+                  <p>Stay cool and shaded</p>
+                  <img src="images/gardenumbrella.png" alt="" class="img-fluid" />
+                </div>
+                <div id="barbecues" class="tabcontent lefttab">
+                  <h3>Barbecues</h3>
+                  <p>Host the perfect outdoor cookout</p>
+                  <img src="images/gardenbarbeque.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'garden-table')" data-dropdown="5">
+                    Garden Table
+                  </button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'garden-chair')">Garden Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'canopies')">Canopies</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'barbecues')">Barbecues</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="6">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="print-art" class="tabcontent lefttab" data-dropdown="6">
+                  <h3>Print Art</h3>
+                  <p>Inspiring wall decor</p>
+                  <img src="images/printing.png" class="img-fluid" />
+                </div>
+                <div id="rugs" class="tabcontent lefttab">
+                  <h3>Rugs</h3>
+                  <p>Soften your living environment</p>
+                  <img src="images/rugs.png" alt="" class="img-fluid" />
+                </div>
+                <div id="curtain" class="tabcontent lefttab">
+                  <h3>Curtain</h3>
+                  <p>Add privacy and style</p>
+                  <img src="images/curtain.png" alt="" class="img-fluid" />
+                </div>
+                <div id="deco-objects" class="tabcontent lefttab">
+                  <h3>Objects</h3>
+                  <p>The final touch</p>
+                  <img src="images/decoobjects.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'print-art')" data-dropdown="6">
+                    Print Art
+                  </button></a
+                >
+                <a href="product.html"><button class="tablinks" onmouseover="openTab(event, 'rugs')">Rugs</button></a>
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'curtain')">Curtain</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'deco-objects')">Decor Objects</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETAIL BODY START HERE -->
+    <!-- breadcrum -->
+    <div class="container mainsection breadcrum">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fa-light fa-angle-right"></i></li>
+        <li><a href="product.html">Products</a></li>
+        <li><i class="fa-light fa-angle-right"></i></li>
+        <li><a href="product.html">Living Room</a></li>
+        <li><i class="fa-light fa-angle-right"></i></li>
+        <li><a href="product.html">Sofa</a></li>
+        <li><i class="fa-light fa-angle-right"></i></li>
+        <li><b>Auburn Performance Bouclé Sofa</b></li>
+      </ul>
+    </div>
+
+    <!-- PRODUCT PHOTO -->
+    <div class="container mainsection detail-section1">
+      <div class="row">
+        <div class="col-12 productname-mobi">
+          <h4>Auburn Performance Bouclé Sofa</h4>
+          <a href="product.html">
+            <p>Sofa</p>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-2 order-md-0 col-12 order-1 smallimagebox">
+          <img src="Images/Detail/Product2/1.png" alt="" class="img-fluid img-active" />
+          <img src="Images/Detail/Product2/2.png" alt="" class="img-fluid" />
+          <img src="Images/Detail/Product2/3.png" alt="" class="img-fluid" />
+          <img src="Images/Detail/Product2/4.png" alt="" class="img-fluid" />
+          <img src="Images/Detail/Product2/5.png" alt="" class="img-fluid" />
+          <img src="Images/Detail/Product2/6.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-10 order-md-1 col-12 order-0 bigimagebox">
+          <img src="Images/Detail/Product2/1.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-xl-5 col-lg-5 order-lg-2 col-12 order-3 productinfo">
+          <div class="productname-desktop">
+            <h4>Auburn Performance Bouclé Sofa</h4>
+            <div class="row row-cols-2">
+              <div class="col">
+                <a href="product.html">
+                  <p>Sofa</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-2 mt-lg-0 mt-3">
+            <div class="col-8 productbox-review">
+              <p>Rating: 5.0</p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <p>(12)</p>
+            </div>
+            <div class="col-4 text-right">
+              <h2>$1999</h2>
+            </div>
+          </div>
+          <p><b>Material:</b> Polyester and wood</p>
+          <div class="choosecolor">
+            <h5 class="my-3">Choose Color</h5>
+            <ul>
+              <li class="colorbox colorbox-active"></li>
+              <li class="colorbox" style="background-color: #c5c0b6"></li>
+              <li class="colorbox" style="background-color: #d96e11"></li>
+              <li class="colorbox" style="background-color: #59070e"></li>
+            </ul>
+          </div>
+          <div class="selectquantity">
+            <h5 class="my-3">Choose Quantity</h5>
+            <div>
+              <button class="minusbtn"><i class="fa-solid fa-minus"></i></button>
+              <input type="text" placeholder="01" class="quantityinput" />
+              <button class="plusbtn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+          <h5>Protect Your Product</h5>
+          <p>Fast repairs, fast replacement, no fees.</p>
+          <div class="row row-cols-2">
+            <div class="col"><button class="warrantybtn wrt-active">2 Years - $79</button></div>
+            <div class="col"><button class="warrantybtn">5 Years - $169</button></div>
+          </div>
+          <div class="buyproduct my-4">
+            <button class="buybtn">ADD TO CART</button>
+            <button class="likebtn" type="button" data-toggle="tooltip" data-placement="top" title="Add To Favorites">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+          <p style="font-family: italicfont">In Stock</p>
+          <p>Ship Globally</p>
+          <p>Delivery Estimated Within <b>2 Weeks</b></p>
+          <p style="font-family: italicfont">Delivery calculated per shipment*</p>
+          <p>14-Day Returns*</p>
+          <p>*: <a href="">Terms and Conditions</a> apply</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT DIMENSION -->
+    <div class="container mainsection detail-section2">
+      <div class="pagename">
+        <h3>PRODUCT INTRODUCTION</h3>
+      </div>
+      <p>
+        Wrapped in a high-performance bouclé, the Auburn is a modular product with a wrap-around armrest for a cozy,
+        lounge-worthy experience.
+      </p>
+      <img src="Images/Detail/Product2/describe.png" alt="" class="img-fluid" />
+      <div class="row my-2">
+        <div class="container">
+          <div class="col-12 productdimension">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-12 dimensionbox dimensionbox-1">
+                <h6>Seat Comfort</h6>
+                <ul>
+                  <li>Relaxed</li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box-active"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li>Upright</li>
+                </ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-12 dimensionbox dimensionbox-2">
+                <h6>Seat Softness</h6>
+                <ul>
+                  <li>Soft</li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box-active"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li>Firm</li>
+                </ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-12 dimensionbox dimensionbox-3">
+                <h6>Seat Depth</h6>
+                <ul>
+                  <li>Shallow</li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box-active"></div></li>
+                  <li><div class="box"></div></li>
+                  <li>Deep</li>
+                </ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-12 dimensionbox dimensionbox-4">
+                <h6>Seat Height</h6>
+                <ul>
+                  <li>Low</li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box-active"></div></li>
+                  <li><div class="box"></div></li>
+                  <li><div class="box"></div></li>
+                  <li>Height</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AT HOME WITH MADERA -->
+    <div class="container mainsection detail-section3">
+      <h4>#AtHomeWithMADERA</h4>
+      <p>
+        How can you tell something is a true favorite of mine? When you see it pop up all over my home. Clearly this art
+        piece is one of my favorite darlings right now, but can you blame me? The scale and print works so well in so
+        many spaces! This new vase and new stems are also on my current “favorites” list so you may be seeing a lot more
+        of them as well.
+      </p>
+      <p>
+        Be inspired by real homes
+        <span class="font-weight-bold">@MADERA</span>
+      </p>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-12">
+          <img src="Images/Detail/Product2/7.png" class="img-fluid" />
+        </div>
+        <div class="col-xl-6 col-lg-6 col-12">
+          <img src="Images/Detail/Product2/8.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER REVIEW -->
+    <div class="container mainsection detail-section4">
+      <div class="pagename">
+        <h3>CUSTOMER REVIEWS</h3>
+        <div class="productbox-review">
+          <p><b>4.5</b> stars</p>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          <p>(20 reviews)</p>
+        </div>
+      </div>
+      <div class="row mt-3 mb-5">
+        <div class="container text-right rating-sort">
+          <span>Sort By:</span>
+          <select name="" id="" class="custom-select">
+            <option value="">Top Review</option>
+            <option value="">Most Recent</option>
+            <option value="">Highest Rating</option>
+            <option value="">Lowest Rating</option>
+          </select>
+        </div>
+      </div>
+      <div class="customer-review">
+        <!-- review1 -->
+        <div class="row py-3 align-items-start">
+          <div class="col-lg-2 col-8 order-0 customer-name">
+            <div class="row row-cols-lg-1 row-cols-2 justify-content-lg-center">
+              <div class="col-lg-8 col-md-2 col-sm-3 col-4 mb-lg-3 mb-4">
+                <img src="Images/Detail/Product2/User Review/user 2.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col text-lg-center p-0">
+                <h6>Kai S.</h6>
+                <p style="font-family: italicfont">United States</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-1 col-12 order-2 review-content">
+            <h6>Amazingly Comfy Sofa!</h6>
+            <div class="productbox-review mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              We fell in love with the Auburn Performance Bouclé Sofa the first time we laid eyes on it. Beautiful and
+              very comfortable at the same time
+            </p>
+            <img src="Images/Detail/Product2/User Review/9.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-2 order-lg-2 col-4 order-1 review-date text-right">25 May 2023</div>
+        </div>
+        <!-- review2 -->
+        <div class="row py-3 align-items-start border-top">
+          <div class="col-lg-2 col-8 order-0 customer-name">
+            <div class="row row-cols-lg-1 row-cols-2 justify-content-lg-center">
+              <div class="col-lg-8 col-md-2 col-sm-3 col-4 mb-lg-3 mb-4">
+                <img src="Images/Detail/Product2/User Review/user 1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col text-lg-center p-0">
+                <h6>Julija P.</h6>
+                <p style="font-family: italicfont">Canada</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-1 col-12 order-2 review-content">
+            <h6>Heavenly Sofa Of My Dreams!</h6>
+            <div class="productbox-review mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Sooo soft, stylish, spacious, comfy and washable! I am in love and all my visitors keep asking where did I
+              buy it from. Best piece of furniture I've ever owned!
+            </p>
+            <img src="Images/Detail/Product2/User Review/10.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-2 order-lg-2 col-4 order-1 review-date text-right">16 April 2023</div>
+        </div>
+        <!-- review3 -->
+        <div class="row py-3 align-items-start border-top">
+          <div class="col-lg-2 col-8 order-0 customer-name">
+            <div class="row row-cols-lg-1 row-cols-2 justify-content-lg-center">
+              <div class="col-lg-8 col-md-2 col-sm-3 col-4 mb-lg-3 mb-4">
+                <img src="Images/Detail/Product2/User Review/user 3.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col text-lg-center p-0">
+                <h6>David Beckham</h6>
+                <p style="font-family: italicfont">London, UK</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-1 col-12 order-2 review-content">
+            <h6>Better Than The Pictures!</h6>
+            <div class="productbox-review mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              I was very nervous to order the main piece for my family room without being able to sit in it first, but I
+              was so impressed with both the structural quality and the upholstery details. So comfortable and it fits
+              my space perfectly! I will definitely order from Madera again!
+            </p>
+            <img src="Images/Detail/Product2/User Review/11.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-2 order-lg-2 col-4 order-1 review-date text-right">1 June 2023</div>
+        </div>
+      </div>
+      <!-- page navigation -->
+      <div class="page-navigation">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- SUGGESTED PRODUCT -->
+    <div class="container mainsection detail-section5">
+      <div class="pagename">
+        <h3>YOU MAY ALSO LIKE</h3>
+      </div>
+      <!-- PRODUCT CAROUSEL 1 -->
+      <div class="row owl-carousel owl-theme productcarousel">
+        <!-- PRODUCT 1 -->
+        <div class="col-12">
+          <div class="productbox">
+            <a href=""><img src="images/Home/product/armchair3.png" class="img-fluid" /> </a>
+            <!-- OVERLAY BUTTON -->
+            <div class="productbox-overlay">
+              <button
+                class="productbox-addtofavorite-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button
+                class="productbox-addtocart-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- PRODUCT CONTENT -->
+            <a href="product.html">
+              <p>Armchair</p>
+            </a>
+            <a href="">
+              <h5>EAMES LOUNGE</h5>
+            </a>
+            <div class="row">
+              <div class="container productbox-price">
+                <div class="productbox-review">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <p>(20)</p>
+                </div>
+                <h5>$1200</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT 2 -->
+        <div class="col-12">
+          <div class="productbox">
+            <a href=""><img src="images/Home/product/dresser.png" class="img-fluid" /></a>
+            <!-- OVERLAY BUTTON -->
+            <div class="productbox-overlay">
+              <button
+                class="productbox-addtofavorite-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button
+                class="productbox-addtocart-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- PRODUCT CONTENT -->
+            <a href="product.html">
+              <p>Dresser</p>
+            </a>
+            <a href="">
+              <h5>MALM DRESSER</h5>
+            </a>
+            <div class="row">
+              <div class="container productbox-price">
+                <div class="productbox-review">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <p>(20)</p>
+                </div>
+                <h5>$1400</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT 3 -->
+        <div class="col-12">
+          <div class="productbox">
+            <a href=""><img src="images/Home/product/bed.png" class="img-fluid" /></a>
+            <!-- OVERLAY BUTTON -->
+            <div class="productbox-overlay">
+              <button
+                class="productbox-addtofavorite-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button
+                class="productbox-addtocart-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- PRODUCT CONTENT -->
+            <a href="product.html">
+              <p>Bed</p>
+            </a>
+            <a href="">
+              <h5>HEMNES BED</h5>
+            </a>
+            <div class="row">
+              <div class="container productbox-price">
+                <div class="productbox-review">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <p>(20)</p>
+                </div>
+                <h5>$1900</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT 4 -->
+        <div class="col-12">
+          <div class="productbox">
+            <a href=""><img src="images/Home/product/armchair1.png" class="img-fluid" /></a>
+            <!-- OVERLAY BUTTON -->
+            <div class="productbox-overlay">
+              <button
+                class="productbox-addtofavorite-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button
+                class="productbox-addtocart-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- PRODUCT CONTENT -->
+            <a href="product.html">
+              <p>Armchair</p>
+            </a>
+            <a href="">
+              <h5>POANG CHAIR</h5>
+            </a>
+            <div class="row">
+              <div class="container productbox-price">
+                <div class="productbox-review">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <p>(20)</p>
+                </div>
+                <h5>$800</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT 5 -->
+        <div class="col-12">
+          <div class="productbox">
+            <a href=""><img src="images/Home/product/diningchair.png" class="img-fluid" /></a>
+            <!-- OVERLAY BUTTON -->
+            <div class="productbox-overlay">
+              <button
+                class="productbox-addtofavorite-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button
+                class="productbox-addtocart-btn"
+                type="button"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Add To Cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </div>
+            <!-- PRODUCT CONTENT -->
+            <a href="product.html">
+              <p>Dining Chair</p>
+            </a>
+            <a href="">
+              <h5>GRAYGARNER</h5>
+            </a>
+            <div class="row">
+              <div class="container productbox-price">
+                <div class="productbox-review">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <p>(20)</p>
+                </div>
+                <h5>$300</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--	  FOOTER-->
+    <!--	  	Footer Content-->
+    <div class="container-fluid" id="bgfooter">
+      <div class="container" id="bgfootercontent">
+        <div class="row">
+          <!--	  		Footer Logo-->
+          <div class="col-xl-3 col-lg-3 d-none d-lg-block" id="footerlogo">
+            <a href="index.html"><img src="images/Logo/Logo doc.png" class="img-fluid" /></a>
+            <p>2023 Madera Group Ltd.<br />All right reserved.</p>
+          </div>
+          <!--	  		Footer link-->
+          <!--				 MOBILE-->
+          <!--				  Our company-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Our Company</h6></a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="">Brand Story</a></li>
+              <li><a href="">Value Statement</a></li>
+            </ul>
+          </div>
+          <!--				  Our Service-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Our Products</h6></a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="product.html">By Rooms</a></li>
+              <li><a href="collection.html">By Collections</a></li>
+            </ul>
+          </div>
+          <!--				  Customer Care-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Customer Care</h6> </a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Order Tracking</a></li>
+              <li><a href="">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <!--				  DESKTOP-->
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Our Company</h6>
+            <ul>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="">Brand Story</a></li>
+              <li><a href="">Value Statement</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Our Products</h6>
+            <ul>
+              <li><a href="product.html">By Rooms</a></li>
+              <li><a href="collection.html">By Collections</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Customer Care</h6>
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Order Tracking</a></li>
+              <li><a href="">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <!--	  		Subscribe and Social Media-->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 footercontent footercontentbutton">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-4 offset-md-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                <h6>Subscribe To Us</h6>
+                <form>
+                  <input type="text" placeholder="Enter your email" id="subscribefill" />
+                  <button id="subscribebtn">Subscribe</button>
+                </form>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-4 offset-md-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                <h6>Follow Us</h6>
+                <div class="col-xl-12" id="socialmediaicon">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube-square"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-12 col-12 d-none d-lg-block companyinfofooter">
+                <ul>
+                  <li><i class="fa-solid fa-circle-phone"></i></li>
+                  <li><p>Tel: +33 1 75 43 89 12</p></li>
+                </ul>
+                <ul>
+                  <li><i class="fa-solid fa-circle-envelope"></i></li>
+                  <li><p>Email: info@madera.eu</p></li>
+                </ul>
+                <ul>
+                  <li><i class="fa-solid fa-circle-location-arrow"></i></li>
+                  <li><p>Address: 22 Rue des Vignes, Paris, France</p></li>
+                </ul>
+              </div>
+              <div class="d-lg-none col-md-4 offset-md-0 col-sm-12 offset-sm-0 col-12 offset-0 mobilecopyright">
+                <p>2023 Madera Group Ltd.<br />All right reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

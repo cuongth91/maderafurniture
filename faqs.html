@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Madera FAQs</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/faqs.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/css/all.min.css" />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- JavaScript viet vao file nay -->
+    <script src="js/script.js"></script>
+
+    <!-- KHONG VIET JAVA O FILE HTML -->
+  </head>
+  <body>
+    <div class="container-fluid" id="blackscreen"></div>
+    <div class="container-fluid" id="blackscreen2"></div>
+    <div class="container-fluid" id="blackscreen3"></div>
+
+    <!-- MODAL SIGN IN -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sign in to your account</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="row">
+                <div class="col-10 offset-1">
+                  <div class="modalicons"><i class="fa-solid fa-user"></i></div>
+                  <input type="text" name="user" value="" id="userid" placeholder="Username" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10 offset-1">
+                  <div class="modalicons"><i class="fa-solid fa-lock"></i></div>
+                  <input type="password" name="pass" value="" id="passid" placeholder="Password" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5 offset-1" id="rememberme">
+                  <label class="customcheckbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <span class="checkbox-label">Remember Me</span>
+                  </label>
+                </div>
+                <div class="col-5" id="forgotpassword">
+                  <a href=""><p>Forgot password?</p></a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="signinmodalbtn">Sign In</button>
+            <button type="button" class="cancelmodalbtn" data-dismiss="modal">Cancel</button>
+            <div class="row" style="margin-top: 20px; margin-bottom: 0">
+              <p>Don't have an account? <a href="">Click here to register</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CART-->
+    <div
+      class="modal fade"
+      id="cart-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">View Cart</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+          </div>
+          <div class="modal-body">
+            <div class="row mb-3 align-items-center cart-modal">
+              <div class="col-2">
+                <img src="images/Home/product/armchair1.png" alt="" class="img-thumbnail" />
+              </div>
+              <div class="col-4 p-0">
+                <h6>POANG CHAIR</h6>
+              </div>
+              <div class="col-6">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-5 p-0">
+                    <select name="color" id="" class="custom-select">
+                      <option value="">Grey</option>
+                      <option value="">White</option>
+                      <option value="">Black</option>
+                    </select>
+                  </div>
+                  <div class="col-5">
+                    <select name="quantity" id="" class="custom-select">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center cart-modal">
+              <div class="col-2">
+                <img src="images/Home/product/armchair3.png" alt="" class="img-thumbnail" />
+              </div>
+              <div class="col-4 p-0">
+                <h6>COLETTE</h6>
+              </div>
+              <div class="col-6">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-5 p-0">
+                    <select name="color" id="" class="custom-select">
+                      <option value="">Grey</option>
+                      <option value="">White</option>
+                      <option value="">Black</option>
+                    </select>
+                  </div>
+                  <div class="col-5">
+                    <select name="quantity" id="" class="custom-select">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                  <div class="col-2 p-0">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p id="empty-cart-text" style="display: none; text-align: center; font-family: italicfont">
+              There is no items in the cart
+            </p>
+          </div>
+          <div class="modal-footer pb-4">
+            <button type="button" class="cancelmodalbtn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="checkoutmodalbtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container-fluid" id="bgheader">
+      <div class="container">
+        <div class="row">
+          <!--				MOBILE ICONS-->
+          <div class="col-md-3 col-sm-3 col-3 d-lg-none" id="mobileicons">
+            <ul>
+              <li>
+                <a id="triggermobilenavi"><i class="fa-solid fa-bars"></i></a>
+              </li>
+              <li>
+                <a id="triggermobilesearch"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--				LOGO-->
+          <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-6" id="logoheader">
+            <a href="index.html"><img src="Images/Logo/Logo doc.png" /></a>
+          </div>
+          <!--	  			Navi desktop-->
+          <div class="col-xl-8 col-lg-8 d-none d-lg-block" id="navi">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li>
+                <a href="product.html" id="trigger-bgdropdownmenu"
+                  >PRODUCTS <i class="fa-solid fa-chevron-down" id="icon-trigger-bgdropdownmenu"></i
+                ></a>
+              </li>
+              <li><a href="collection.html">COLLECTIONS</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="faqs.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <!--	  			Search-->
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block" id="search">
+            <form>
+              <input type="text" placeholder="Search..." id="searchfill" />
+              <button id="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <!--				ICONS-->
+          <div class="col-xl-1 col-lg-1 col-md-3 col-sm-3 col-3 icons">
+            <ul>
+              <li>
+                <a data-toggle="modal" data-target="#cart-modal"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li>
+                <a data-toggle="modal" data-target="#exampleModalCenter"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--	  MOBILE NAVI-->
+    <div class="container-fluid" id="bgmobilenavi">
+      <div class="row">
+        <div class="col-12" id="mobilenavi">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <div class="container mobile-dropdown-btn">
+                <a href="product.html">PRODUCTS</a>
+                <button class="trigger-mobile-dropdown-lv1">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </li>
+            <div class="mobile-dropdown-container">
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-couch"></i>Living Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Sofa</a>
+                  <a href="product.html">Table</a>
+                  <a href="product2.html">Cabinet</a>
+                  <a href="product.html">Lighting</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-bed-front"></i>Bedroom</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Bed</a>
+                  <a href="product.html">Wardrobe</a>
+                  <a href="product.html">Mattress</a>
+                  <a href="product.html">Bedside</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-fork-knife"></i>Dining Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Dining Table</a>
+                  <a href="product.html">Dining Chair</a>
+                  <a href="product.html">Dining Set</a>
+                  <a href="product.html">Kitchen Cabinet</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-books"></i>Work Room</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Desk</a>
+                  <a href="product.html">Office Chair</a>
+                  <a href="product.html">Bookshelves</a>
+                  <a href="product.html">Storage</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-trees"></i>Outdoor</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2">
+                  <a href="product.html">Garden Table</a>
+                  <a href="product.html">Garden Chair</a>
+                  <a href="product.html">Canopies</a>
+                  <a href="product.html">Barbeques</a>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <a href="product.html"><i class="fa-solid fa-lights-holiday"></i>Decoration</a>
+                <button class="trigger-mobile-dropdown-lv2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="row mobile-dropdown-container-level2" style="border-bottom: none">
+                  <a href="product.html">Print Art</a>
+                  <a href="product.html">Rugs</a>
+                  <a href="product.html">Curtain</a>
+                  <a href="product.html">Decor Objects</a>
+                </div>
+              </div>
+            </div>
+            <li><a href="collection.html">COLLECTIONS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="faqs.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE SEARCH -->
+    <div class="container-fluid d-lg-none" id="bgmobilesearch">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-12" id="mobilesearch">
+            <form>
+              <input type="text" placeholder="Search..." id="mobilesearchfill" />
+              <button id="mobilesearchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT MENU -->
+    <div class="container" id="bgdropdownmenu">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 d-none d-lg-block">
+          <ul class="productmenu">
+            <li class="menuproductbutton" data-dropdown="1">
+              <a href="product.html" class="dropdownbutton" data-dropdown="1">
+                <img src="Images/flaticon/couch.png" />
+                <ul>
+                  <li><h6>Living Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="2">
+              <a href="product.html" class="dropdownbutton" data-dropdown="2">
+                <img src="Images/flaticon/bed.png" />
+                <ul>
+                  <li><h6>Bedroom</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="3">
+              <a href="product.html" class="dropdownbutton" data-dropdown="3">
+                <img src="Images/flaticon/dinner-table.png" />
+                <ul>
+                  <li><h6>Dining Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="4">
+              <a href="product.html" class="dropdownbutton" data-dropdown="4">
+                <img src="Images/flaticon/work-table.png" />
+                <ul>
+                  <li><h6>Work Room</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="5">
+              <a href="product.html" class="dropdownbutton" data-dropdown="5">
+                <img src="Images/flaticon/outdoor.png" />
+                <ul>
+                  <li><h6>Outdoor</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menuproductbutton" data-dropdown="6">
+              <a href="product.html" class="dropdownbutton" data-dropdown="6">
+                <img src="Images/flaticon/decoration.png" />
+                <ul>
+                  <li><h6>Decoration</h6></li>
+                  <li><i class="fa-solid fa-chevron-down"></i></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- DROPDOWN MENU -->
+      <div class="row">
+        <div class="container productmenudropdown">
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="1">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Sofa')" data-dropdown="1">Sofa</button></a
+                >
+                <a href="product.html"><button class="tablinks" onmouseover="openTab(event, 'Table')">Table</button></a>
+                <a href="product2.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Cabinet')">Cabinet</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Lighting')">Lighting</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="Sofa" class="tabcontent righttab" data-dropdown="1">
+                  <h3>Sofa</h3>
+                  <p>Cozy and stylish seating options</p>
+                  <img src="images/sofa.png" class="img-fluid" />
+                </div>
+                <div id="Table" class="tabcontent righttab">
+                  <h3>Table</h3>
+                  <p>Functional and decorative centerpieces</p>
+                  <img src="images/table.png" class="img-fluid" />
+                </div>
+                <div id="Cabinet" class="tabcontent righttab">
+                  <h3>Cabinet</h3>
+                  <p>Storage solutions with a modern twist</p>
+                  <img src="images/cabinet.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Lighting" class="tabcontent righttab">
+                  <h3>Lighting</h3>
+                  <p>Ambiance-enhancing fixtures for any space</p>
+                  <img src="images/lighting.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="2">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Bed')" data-dropdown="2">Bed</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Wardrobe')">Wardrobe</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Mattress')">Mattress</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'Bedside')">Bedside</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="Bed" class="tabcontent righttab" data-dropdown="2">
+                  <h3>Bed</h3>
+                  <p>Sturdy and stylish designs</p>
+                  <img src="images/bed.png" class="img-fluid" />
+                </div>
+                <div id="Wardrobe" class="tabcontent righttab">
+                  <h3>Wardrobe</h3>
+                  <p>Spacious storage solutions for clothes</p>
+                  <img src="images/wardrobe.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Mattress" class="tabcontent righttab">
+                  <h3>Mattress</h3>
+                  <p>Luxurious comfort for a dreamy slumber</p>
+                  <img src="images/mattress.png" alt="" class="img-fluid" />
+                </div>
+                <div id="Bedside" class="tabcontent righttab">
+                  <h3>Bedside</h3>
+                  <p>Convenient bedside storage for essentials</p>
+                  <img src="images/bedside.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content" data-dropdown="3">
+              <div class="col-3 dropdown-content-button left-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-table')" data-dropdown="3">
+                    Dining Table
+                  </button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-chair')">Dining Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'dining-set')">Dining Set</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'kitchen-cabinet')">Kitchen Cabinet</button></a
+                >
+              </div>
+              <div class="col-9 dropdown-content-image right-dropdown-box">
+                <div id="dining-table" class="tabcontent righttab" data-dropdown="3">
+                  <h3>Dining Table</h3>
+                  <p>Gather around a beautiful table</p>
+                  <img src="images/diningtable.png" class="img-fluid" />
+                </div>
+                <div id="dining-chair" class="tabcontent righttab">
+                  <h3>Dining Chair</h3>
+                  <p>Sit in style and comfort</p>
+                  <img src="images/diningchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="dining-set" class="tabcontent righttab">
+                  <h3>Dining Set</h3>
+                  <p>Complete your dining room with ease</p>
+                  <img src="images/diningset.png" alt="" class="img-fluid" />
+                </div>
+                <div id="kitchen-cabinet" class="tabcontent righttab">
+                  <h3>Kitchen Cabinet</h3>
+                  <p>Organize and beautify your kitchen space</p>
+                  <img src="images/kitchencabinet.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="4">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="desk" class="tabcontent lefttab" data-dropdown="4">
+                  <h3>Desk</h3>
+                  <p>For a productive workspace</p>
+                  <img src="images/workdesk.png" class="img-fluid" />
+                </div>
+                <div id="office-chair" class="tabcontent lefttab">
+                  <h3>Office Chair</h3>
+                  <p>Comfortable and stylish seating</p>
+                  <img src="images/workchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="book-shelves" class="tabcontent lefttab">
+                  <h3>Book Shelves</h3>
+                  <p>Organize your workspace</p>
+                  <img src="images/bookshelves.png" alt="" class="img-fluid" />
+                </div>
+                <div id="storage" class="tabcontent lefttab">
+                  <h3>Storage</h3>
+                  <p>Keep your important documents safe</p>
+                  <img src="images/workstorage.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'desk')" data-dropdown="4">Desk</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'office-chair')">Office Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'book-shelves')">Book Shelves</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'storage')">Storage</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="5">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="garden-table" class="tabcontent lefttab" data-dropdown="5">
+                  <h3>Garden Table</h3>
+                  <p>Dine with our stylish garden tables.</p>
+                  <img src="images/gardentable.png" class="img-fluid" />
+                </div>
+                <div id="garden-chair" class="tabcontent lefttab">
+                  <h3>Garden Chair</h3>
+                  <p>Relax and unwind</p>
+                  <img src="images/gardenchair.png" alt="" class="img-fluid" />
+                </div>
+                <div id="canopies" class="tabcontent lefttab">
+                  <h3>Canopies</h3>
+                  <p>Stay cool and shaded</p>
+                  <img src="images/gardenumbrella.png" alt="" class="img-fluid" />
+                </div>
+                <div id="barbecues" class="tabcontent lefttab">
+                  <h3>Barbecues</h3>
+                  <p>Host the perfect outdoor cookout</p>
+                  <img src="images/gardenbarbeque.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'garden-table')" data-dropdown="5">
+                    Garden Table
+                  </button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'garden-chair')">Garden Chair</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'canopies')">Canopies</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'barbecues')">Barbecues</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 d-none d-lg-block productmenudropdownbox">
+            <div class="dropdown-content dropdown-content-reverse" data-dropdown="6">
+              <div class="col-9 dropdown-content-image left-dropdown-box">
+                <div id="print-art" class="tabcontent lefttab" data-dropdown="6">
+                  <h3>Print Art</h3>
+                  <p>Inspiring wall decor</p>
+                  <img src="images/printing.png" class="img-fluid" />
+                </div>
+                <div id="rugs" class="tabcontent lefttab">
+                  <h3>Rugs</h3>
+                  <p>Soften your living environment</p>
+                  <img src="images/rugs.png" alt="" class="img-fluid" />
+                </div>
+                <div id="curtain" class="tabcontent lefttab">
+                  <h3>Curtain</h3>
+                  <p>Add privacy and style</p>
+                  <img src="images/curtain.png" alt="" class="img-fluid" />
+                </div>
+                <div id="deco-objects" class="tabcontent lefttab">
+                  <h3>Objects</h3>
+                  <p>The final touch</p>
+                  <img src="images/decoobjects.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-3 dropdown-content-button right-dropdown-box tab">
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'print-art')" data-dropdown="6">
+                    Print Art
+                  </button></a
+                >
+                <a href="product.html"><button class="tablinks" onmouseover="openTab(event, 'rugs')">Rugs</button></a>
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'curtain')">Curtain</button></a
+                >
+                <a href="product.html"
+                  ><button class="tablinks" onmouseover="openTab(event, 'deco-objects')">Decor Objects</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ BODY START HERE -->
+    <!-- breadcrum -->
+    <div class="container mainsection breadcrum">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>></li>
+        <li><a href="">Contact Us</a></li>
+        <li>></li>
+        <li><b>FAQs</b></li>
+      </ul>
+    </div>
+    <!-- Search -->
+    <div class="container mainsection faqs-section1">
+      <div class="pagename">
+        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+        <br />
+        <h5>Hello! How can we help you?</h5>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 faqsseachbox">
+            <form>
+              <input type="text" placeholder="Enter your questions here..." />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <h5>Or you can browse all frequently asked questions below</h5>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="container mainsection faqs-section2">
+      <h4>CATEGORIES</h4>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <div class="container faqs-category faqs-cat-active" data-faqs="1">
+            <img src="images/flaticon/faq1.png" />
+            <h5>Order & Shipping</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <div class="container faqs-category" data-faqs="2">
+            <img src="images/flaticon/faq2.png" />
+            <h5>Payment & Return</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <div class="container faqs-category" data-faqs="3">
+            <img src="images/flaticon/faq3.png" />
+            <h5>Product Info</h5>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+          <div class="container faqs-category" data-faqs="4">
+            <img src="images/flaticon/faq4.png" />
+            <h5>Warranty & Repair</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Q&A -->
+    <!-- Cat1 -->
+    <div class="container mainsection faqs-section3 faqs-content-active" data-faqs="1">
+      <h4>ORDER & SHIPPING</h4>
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- Question1 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How can I place an order?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                You can shop at our store or place an order online through our website or by phone with one of our
+                customer service representatives.
+              </p>
+            </div>
+          </div>
+          <!-- Question2 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How long does it take to process an order?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>Orders are typically processed within 1-2 business days.</p>
+            </div>
+          </div>
+          <!-- Question3 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What shipping methods are available?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>We offer standard and express shipping options.</p>
+            </div>
+          </div>
+          <!-- Question4 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How long does shipping usually take?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>Shipping times vary depending on the destination, but generally range from 3-7 business days.</p>
+            </div>
+          </div>
+          <!-- Question5 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Do you offer international shipping?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>Yes, we offer international shipping to select countries.</p>
+            </div>
+          </div>
+          <!-- Question6 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How can I track my order?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>Once your order is shipped, you will receive a tracking number via email to monitor its progress.</p>
+            </div>
+          </div>
+          <!-- Question7 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Are there any additional shipping fees or taxes?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Shipping fees and taxes may apply based on the destination and local regulations. Please review your
+                order summary for details.
+              </p>
+            </div>
+          </div>
+          <!-- Question8 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Can I cancel or modify my order after it has been placed?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Please contact our customer support team as soon as possible to check if modifications are possible.
+              </p>
+            </div>
+          </div>
+          <!-- Question9 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What should I do if my order arrives damaged or defective?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Please reach out to our customer support with details and photos, and we will assist you with a
+                resolution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cat2 -->
+    <div class="container mainsection faqs-section3" data-faqs="2">
+      <h4>PAYMENT & RETURN</h4>
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- Question1 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What payment methods do you accept?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>We accept major credit cards and PayPal for online transactions.</p>
+            </div>
+          </div>
+          <!-- Question2 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Is my payment information secure?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Yes, we take customer data security seriously and use secure encryption methods to protect your payment
+                information.
+              </p>
+            </div>
+          </div>
+          <!-- Question3 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What is your return policy?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                We have a 30-day return policy for eligible items. Please refer to our policy page for detailed
+                information.
+              </p>
+            </div>
+          </div>
+          <!-- Question4 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How do I initiate a return?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                To initiate a return, please contact our customer support team and provide your order details. They will
+                guide you through the process.
+              </p>
+            </div>
+          </div>
+          <!-- Question5 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Are there any return shipping fees?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>Return shipping fees may apply unless the return is due to a product defect or error on our part.</p>
+            </div>
+          </div>
+          <!-- Question6 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>When will I receive my refund?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Once we receive and process your returned item, refunds are typically issued within 5-7 business days.
+              </p>
+            </div>
+          </div>
+          <!-- Question7 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Can I exchange an item instead of returning it?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                We currently don't offer direct exchanges. You can initiate a return and place a new order for the
+                desired item.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cat3 -->
+    <div class="container mainsection faqs-section3" data-faqs="3">
+      <h4>PRODUCT INFORMATION</h4>
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- Question1 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How do I find product information and specifications?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Product information and specifications can be found on the product detail page, including dimensions,
+                materials, and features.
+              </p>
+            </div>
+          </div>
+          <!-- Question2 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Are the product images accurate representations?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                We strive to provide accurate and high-quality product images. However, please note that colors may vary
+                slightly due to different monitor settings.
+              </p>
+            </div>
+          </div>
+          <!-- Question3 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Do you have product assembly instructions?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Yes, assembly instructions are included with applicable products. They can be found either in the
+                product packaging or available for download on our website.
+              </p>
+            </div>
+          </div>
+          <!-- Question4 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Are your products made from sustainable materials?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Yes, we prioritize sustainability and source materials responsibly. Look for eco-friendly icons and
+                certifications on product pages for more information.
+              </p>
+            </div>
+          </div>
+          <!-- Question5 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What warranty is offered for your products?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Warranty terms vary by product. Please refer to the product page or contact our customer support for
+                specific warranty details.
+              </p>
+            </div>
+          </div>
+          <!-- Question6 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Can I request a sample or fabric swatch?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Unfortunately, we do not offer sample requests or fabric swatches at this time. We recommend reviewing
+                product images and descriptions for a better understanding.
+              </p>
+            </div>
+          </div>
+          <!-- Question7 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Can I customize or personalize a product?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Currently, we do not offer customization or personalization services. Products are sold as shown on the
+                product page.
+              </p>
+            </div>
+          </div>
+          <!-- Question8 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How can I determine if a product will fit in my space?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                We provide product dimensions on the product detail page. Please measure your space carefully to ensure
+                the product will fit appropriately.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cat4 -->
+    <div class="container mainsection faqs-section3" data-faqs="4">
+      <h4>WARRANTY & REPAIR</h4>
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- Question1 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What is the warranty period for your products?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                The warranty period varies depending on the product. Please refer to the product page or warranty
+                documentation for specific details.
+              </p>
+            </div>
+          </div>
+          <!-- Question2 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What does the warranty cover?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                The warranty covers manufacturing defects and faulty workmanship. It does not cover normal wear and tear
+                or damage caused by misuse or neglect.
+              </p>
+            </div>
+          </div>
+          <!-- Question3 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How do I register my product for warranty?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                Product registration for warranty purposes is not required. Keep your proof of purchase in case you need
+                to make a warranty claim.
+              </p>
+            </div>
+          </div>
+          <!-- Question4 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How do I make a warranty claim?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                To make a warranty claim, please contact our customer support with your order details and a description
+                of the issue. We'll guide you through the process.
+              </p>
+            </div>
+          </div>
+          <!-- Question5 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>What happens if my warranty has expired?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                If your warranty has expired, we can still provide assistance and suggest repair options. Please contact
+                our customer support for further guidance.
+              </p>
+            </div>
+          </div>
+          <!-- Question6 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Can I repair the product myself?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                We recommend contacting our customer support for authorized repair options. Unauthorized repairs may
+                void the warranty.
+              </p>
+            </div>
+          </div>
+          <!-- Question7 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>Is there a cost associated with warranty repairs?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                The cost of warranty repairs is typically covered by us. However, please note that shipping fees or
+                other expenses may apply in certain situations.
+              </p>
+            </div>
+          </div>
+          <!-- Question8 -->
+          <div class="row faqs-section3-content">
+            <div class="container faqs-question trigger-faqs-anwswer">
+              <p>How long does a warranty repair typically take?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container faqs-answer">
+              <p>
+                The duration of a warranty repair depends on the nature of the issue. We aim to complete repairs in a
+                timely manner and will provide updates throughout the process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--	  FOOTER-->
+    <!--	  	Footer Content-->
+    <div class="container-fluid" id="bgfooter">
+      <div class="container" id="bgfootercontent">
+        <div class="row">
+          <!--	  		Footer Logo-->
+          <div class="col-xl-3 col-lg-3 d-none d-lg-block" id="footerlogo">
+            <a href="index.html"><img src="images/Logo/Logo doc.png" class="img-fluid" /></a>
+            <p>2023 Madera Group Ltd.<br />All right reserved.</p>
+          </div>
+          <!--	  		Footer link-->
+          <!--				 MOBILE-->
+          <!--				  Our company-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Our Company</h6></a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="">Brand Story</a></li>
+              <li><a href="">Value Statement</a></li>
+            </ul>
+          </div>
+          <!--				  Our Service-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Our Products</h6></a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="product.html">By Rooms</a></li>
+              <li><a href="collection.html">By Collections</a></li>
+            </ul>
+          </div>
+          <!--				  Customer Care-->
+          <div class="col-sm-12 col-12 d-md-none mobilefootercontent triggermobilefooterlink">
+            <ul>
+              <li>
+                <a><h6>Customer Care</h6> </a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-12 d-md-none mobilefooterlink">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Order Tracking</a></li>
+              <li><a href="">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <!--				  DESKTOP-->
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Our Company</h6>
+            <ul>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="">Brand Story</a></li>
+              <li><a href="">Value Statement</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Our Products</h6>
+            <ul>
+              <li><a href="product.html">By Rooms</a></li>
+              <li><a href="collection.html">By Collections</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block footercontent">
+            <h6>Customer Care</h6>
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Order Tracking</a></li>
+              <li><a href="">Privacy & Terms</a></li>
+            </ul>
+          </div>
+          <!--	  		Subscribe and Social Media-->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 footercontent footercontentbutton">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-4 offset-md-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                <h6>Subscribe To Us</h6>
+                <form>
+                  <input type="text" placeholder="Enter your email" id="subscribefill" />
+                  <button id="subscribebtn">Subscribe</button>
+                </form>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-4 offset-md-0 col-sm-8 offset-sm-2 col-10 offset-1">
+                <h6>Follow Us</h6>
+                <div class="col-xl-12" id="socialmediaicon">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-youtube-square"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-12 col-12 d-none d-lg-block companyinfofooter">
+                <ul>
+                  <li><i class="fa-solid fa-circle-phone"></i></li>
+                  <li><p>Tel: +33 1 75 43 89 12</p></li>
+                </ul>
+                <ul>
+                  <li><i class="fa-solid fa-circle-envelope"></i></li>
+                  <li><p>Email: info@madera.eu</p></li>
+                </ul>
+                <ul>
+                  <li><i class="fa-solid fa-circle-location-arrow"></i></li>
+                  <li><p>Address: 22 Rue des Vignes, Paris, France</p></li>
+                </ul>
+              </div>
+              <div class="d-lg-none col-md-4 offset-md-0 col-sm-12 offset-sm-0 col-12 offset-0 mobilecopyright">
+                <p>2023 Madera Group Ltd.<br />All right reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

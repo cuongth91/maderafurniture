@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+.faqs-section1 h3 {
+  margin-bottom: 4vh;
+}
+.faqs-section1 h5 {
+  margin-bottom: 2vh;
+}
+
+/* SEARCH BOX */
+.faqsseachbox {
+  margin-bottom: 4vh;
+  max-width: 800px;
+}
+.faqsseachbox input,
+.faqsseachbox button {
+  height: 70px;
+}
+.faqsseachbox form {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid 1pt black;
+  border-radius: 50px;
+}
+.faqsseachbox input {
+  width: 90%;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  font-family: italicfont;
+  color: black;
+}
+.faqsseachbox button {
+  outline: none;
+  border: none;
+  width: 10%;
+  background-color: white;
+  color: black;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+/* CATEGORY BUTTON */
+.faqs-section2 h4 {
+  margin-bottom: 3vh;
+}
+.faqs-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 15px;
+  border: solid 1pt black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.faqs-cat-active {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(251, 201, 104, 0.2); */
+}
+.faqs-section3 {
+  display: none;
+}
+.faqs-content-active {
+  display: block;
+}
+
+/* Q&A */
+.faqs-section3 h4 {
+  margin-bottom: 3vh;
+}
+.faqs-question,
+.faqs-answer {
+  border: solid 1pt black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.faqs-answer {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(251, 201, 104, 0.2); */
+}
+.faqs-question p,
+.faqs-answer p {
+  margin: 0;
+}
+.faqs-question p {
+  padding-right: 15px;
+}
+.faqs-answer p {
+  font-family: italicfont;
+}
+.faqs-section3-content {
+  margin-bottom: 3vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* RESPONSIVE CSS ----------------------------------------------- */
+
+/* XL - 1440 -----------------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .faqsseachbox {
+    width: 60vw;
+  }
+  .faqs-category img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}
+
+/* LG - 1024 -----------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .faqsseachbox {
+    width: 70vw;
+  }
+  .faqs-category img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .faqs-category h5 {
+    font-size: 15px;
+  }
+}
+
+/* MD - 768 -----------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .faqsseachbox {
+    width: 80vw;
+  }
+  .faqsseachbox input {
+    width: 85%;
+  }
+  .faqsseachbox button {
+    width: 15%;
+  }
+  .faqs-category img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .faqs-category h5 {
+    font-size: 12px;
+  }
+}
+
+/* SM - 576 -----------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .faqs-section1 h3 {
+    margin-top: 6vh;
+  }
+  .faqs-section1 h5 {
+    width: 90%;
+  }
+  .faqsseachbox {
+    width: 95vw;
+  }
+  .faqsseachbox input {
+    width: 85%;
+  }
+  .faqsseachbox button {
+    width: 15%;
+  }
+  .faqs-category {
+    margin-bottom: 30px;
+  }
+  .faqs-category img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}
+
+/* XS - 420 -----------------------------------------------------*/
+
+@media (max-width: 575px) {
+  .faqs-section1 h3 {
+    margin-top: 6vh;
+    font-size: 23px;
+  }
+  .faqsseachbox {
+    width: 95vw;
+  }
+  .faqsseachbox input,
+  .faqsseachbox button {
+    height: 60px;
+  }
+  .faqsseachbox input {
+    width: 85%;
+  }
+  .faqsseachbox button {
+    width: 15%;
+  }
+  .faqs-category {
+    margin-bottom: 30px;
+  }
+  .faqs-category img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .faqs-category h5 {
+    font-size: 14px;
+  }
+}

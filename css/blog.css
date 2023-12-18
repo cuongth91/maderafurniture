@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+.underlinebutton {
+  font-size: 1.25rem;
+}
+/* CONTENT1 */
+.blog-section1 img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* CONTENT2 */
+.blog-section2 img {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* CONTENT3 */
+.blog-section3 {
+  background-color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: white;
+}
+.blog-section3-img img {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10%;
+}
+
+/* CONTENT4 */
+.blog-section4 img {
+  border-radius: 20px;
+}
+
+/* RESPONSIVE CSS ----------------------------------------------- */
+
+/* XL - 1440 -----------------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .blog-section2 img {
+    height: 40%;
+  }
+}
+
+/* LG - 1024 -----------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .blog-section2 img {
+    height: 40%;
+  }
+}
+
+/* MD - 768 -----------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-section1 img {
+    height: 100%;
+  }
+  .blog-section2 img {
+    height: 70%;
+  }
+  .blog-section3 {
+    padding-top: 30vh;
+    padding-bottom: 5vh;
+  }
+  .blog-section3-img img {
+    margin-bottom: 3vh;
+  }
+}
+
+/* SM - 576 -----------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pagename h3 {
+    font-size: 36px;
+  }
+  .blog-section1 {
+    margin-top: 4vh;
+  }
+  .blog-section1 img {
+    margin-bottom: 3vh;
+  }
+  .blog-section2 img {
+    height: 60%;
+  }
+  .blog-section3 {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+  }
+  .blog-section3-img img {
+    margin-bottom: 3vh;
+  }
+}
+
+/* XS - 420 -----------------------------------------------------*/
+
+@media (max-width: 575px) {
+  .pagename h3 {
+    font-size: 27px;
+  }
+  .blog-section1 {
+    margin-top: 4vh;
+  }
+  .blog-section1 img {
+    margin-bottom: 3vh;
+  }
+  .blog-section2 img {
+    height: 50%;
+  }
+  .blog-section3 {
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+  }
+  .blog-section3-img img {
+    margin-bottom: 3vh;
+  }
+  .blog-section3-content h4 {
+    font-size: 20px;
+  }
+}
